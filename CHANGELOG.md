@@ -4,6 +4,26 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.108](https://github.com/Piebald-AI/claude-code-system-prompts/commit/a4256f1)
+
+_+885 tokens_
+
+- **NEW:** System Prompt: REPL tool usage and scripting conventions — Instructs Claude on how to use the REPL tool effectively with dense JavaScript scripts, shorthands, batching rules, and API reference for investigation tasks.
+- **NEW:** Tool Description: REPL — Describes the REPL tool, a JavaScript programming interface for looping, branching, and composing Claude Code tool calls as async functions.
+- **REMOVED:** Skill: Build Claude API and SDK apps — Removed standalone trigger rules for activating guidance when users are building applications with the Claude API, Anthropic SDKs, or Managed Agents.
+- Agent Prompt: /security-review slash command — Updated allowed-tools syntax from colon-separated (`git diff:*`) to space-separated (`git diff *`) Bash patterns.
+- Data: Claude model catalog — Removed blank line before model descriptions section.
+- Data: GitHub Actions workflow for @claude mentions — Updated example `claude_args` from colon-separated to space-separated Bash pattern syntax.
+- Data: Live documentation sources — Reformatted Models & Pricing table alignment.
+- Skill: Build with Claude API (reference guide) — Added extension point between compaction and prompt caching quick-task entries.
+- Skill: Building LLM-powered applications with Claude — Softened `budget_tokens` deprecation from "must not be used" to "should not be used for new code"; clarified `max` effort is Opus-tier only (not just Opus 4.6); expanded prefill removal warning from Opus 4.6 only to the entire 4.6 family (Opus 4.6 and Sonnet 4.6); expanded JSON escaping warning to cover both Opus 4.6 and Sonnet 4.6; updated numbered list entry for live sources from 10 to 11; removed blank line between compaction and prompt caching navigation entries.
+- Skill: Create verifier skills — Updated all `allowed-tools` examples from colon-separated to space-separated Bash pattern syntax.
+- Skill: Update Claude Code Config — Updated all permission examples from colon-separated (`Bash(npm:*)`) to space-separated (`Bash(npm *)`) syntax.
+- System Prompt: Avoiding Unnecessary Sleep Commands (part of PowerShell tool description) — Removed specific "1-5 seconds" duration guidance, now just says "keep the duration short."
+- System Prompt: Skillify Current Session — Updated `allowed-tools` example from colon-separated to space-separated Bash pattern syntax.
+- Tool Description: Bash (sleep — keep short) — Removed specific "1-5 seconds" duration guidance, now just says "keep the duration short."
+
+
 # [2.1.107](https://github.com/Piebald-AI/claude-code-system-prompts/commit/45fab40)
 
 _+119 tokens_
