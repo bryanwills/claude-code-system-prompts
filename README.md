@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!important]
 > **NEW (January 23, 2026): We've added all of Claude Code's ~40 system reminders to this list&mdash;see [System Reminders](#system-reminders).**
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.116](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.116) (April 20th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 158 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.117](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.117) (April 21st, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 159 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -89,7 +89,7 @@ Sub-agents and utilities.
 - [Agent Prompt: /batch slash command](./system-prompts/agent-prompt-batch-slash-command.md) (**1106** tks) - Instructions for orchestrating a large, parallelizable change across a codebase.
 - [Agent Prompt: /rename auto-generate session name](./system-prompts/agent-prompt-rename-auto-generate-session-name.md) (**80** tks) - Prompt used by /rename (no args) to auto-generate a kebab-case session name from conversation context.
 - [Agent Prompt: /review-pr slash command](./system-prompts/agent-prompt-review-pr-slash-command.md) (**211** tks) - System prompt for reviewing GitHub pull requests with code analysis.
-- [Agent Prompt: /schedule slash command](./system-prompts/agent-prompt-schedule-slash-command.md) (**2486** tks) - Guides the user through scheduling, updating, listing, or running remote Claude Code agents on cron triggers via the Anthropic cloud API.
+- [Agent Prompt: /schedule slash command](./system-prompts/agent-prompt-schedule-slash-command.md) (**2830** tks) - Guides the user through scheduling, updating, listing, or running remote Claude Code agents on cron triggers via the Anthropic cloud API.
 - [Agent Prompt: /security-review slash command](./system-prompts/agent-prompt-security-review-slash-command.md) (**2550** tks) - Comprehensive security review prompt for analyzing code changes with focus on exploitable vulnerabilities.
 
 #### Utilities
@@ -171,6 +171,7 @@ Parts of the main system prompt.
 - [System Prompt: Auto mode](./system-prompts/system-prompt-auto-mode.md) (**255** tks) - Continuous task execution, akin to a background agent.
 - [System Prompt: Autonomous loop check](./system-prompts/system-prompt-autonomous-loop-check.md) (**1071** tks) - Defines behavior for autonomous timer-based invocations, guiding Claude to continue established work, maintain PRs, and handle repeated idle checks while the user is away.
 - [System Prompt: Avoiding Unnecessary Sleep Commands (part of PowerShell tool description)](./system-prompts/system-prompt-avoiding-unnecessary-sleep-commands-part-of-powershell-tool-description.md) (**175** tks) - Guidelines for avoiding unnecessary sleep commands in PowerShell scripts, including alternatives for waiting and notification.
+- [System Prompt: Background job behavior](./system-prompts/system-prompt-background-job-behavior.md) (**349** tks) - Instructs background job agents to narrate progress, restate results in message text for classifier extraction, and signal done/blocked/failed status.
 - [System Prompt: Censoring assistance with malicious activities](./system-prompts/system-prompt-censoring-assistance-with-malicious-activities.md) (**98** tks) - Guidelines for assisting with authorized security testing, defensive security, CTF challenges, and educational contexts while censoring requests for malicious activities.
 - [System Prompt: Chrome browser MCP tools](./system-prompts/system-prompt-chrome-browser-mcp-tools.md) (**156** tks) - Instructions for loading Chrome browser MCP tools via MCPSearch before use.
 - [System Prompt: Claude in Chrome browser automation](./system-prompts/system-prompt-claude-in-chrome-browser-automation.md) (**759** tks) - Instructions for using Claude in Chrome browser automation tools effectively.
@@ -379,6 +380,5 @@ Built-in skill prompts for specialized tasks.
 - [Skill: Update Claude Code Config](./system-prompts/skill-update-claude-code-config.md) (**1190** tks) - Skill for modifying Claude Code configuration file (settings.json).
 - [Skill: Verify CLI changes (example for Verify skill)](./system-prompts/skill-verify-cli-changes-example-for-verify-skill.md) (**565** tks) - Example workflow for verifying a CLI change, as part of the Verify skill.
 - [Skill: Verify server/API changes (example for Verify skill)](./system-prompts/skill-verify-serverapi-changes-example-for-verify-skill.md) (**612** tks) - Example workflow for verifying a server/API change, as part of the Verify skill.
-- [Skill: Verify skill (runtime-verification)](./system-prompts/skill-verify-skill-runtime-verification.md) (**2696** tks) - Alias of the Verify skill registered under the /runtime-verification slash command name — identical content, different frontmatter invoke name.
 - [Skill: Verify skill](./system-prompts/skill-verify-skill.md) (**2694** tks) - Skill for opinionated verification workflow for validating code changes.
 - [Skill: update-config (7-step verification flow)](./system-prompts/skill-update-config-7-step-verification-flow.md) (**1160** tks) - A skill that guides Claude through a 7-step process to construct and verify hooks for Claude Code, ensuring they work correctly in the user's specific project environment.
