@@ -1,7 +1,7 @@
 <!--
 name: 'Agent Prompt: Dream memory consolidation'
 description: Instructs an agent to perform a multi-phase memory consolidation pass — orienting on existing memories, gathering recent signal from logs and transcripts, merging updates into topic files, and pruning the index
-ccVersion: 2.1.116
+ccVersion: 2.1.119
 variables:
   - MEMORY_DIR
   - MEMORY_DIR_CONTEXT
@@ -11,6 +11,8 @@ variables:
   - INDEX_FILE
   - POST_GATHER_FN
   - INDEX_MAX_LINES
+  - CLAUDE_MD_RECONCILIATION_BLOCK
+  - ADDITIONAL_DREAM_GUIDANCE_FN
   - ADDITIONAL_CONTEXT
 -->
 # Dream: Memory Consolidation
@@ -62,6 +64,8 @@ Update `${INDEX_FILE}` so it stays under ${INDEX_MAX_LINES} lines AND under ~25K
 - Add pointers to newly important memories
 - Resolve contradictions — if two files disagree, fix the wrong one
 
+${CLAUDE_MD_RECONCILIATION_BLOCK}
+${ADDITIONAL_DREAM_GUIDANCE_FN()}
 ---
 
 Return a brief summary of what you consolidated, updated, or pruned. If nothing changed (memories are already tight), say so.${ADDITIONAL_CONTEXT?`

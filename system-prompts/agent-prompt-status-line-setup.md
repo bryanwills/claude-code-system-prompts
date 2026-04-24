@@ -1,7 +1,7 @@
 <!--
 name: 'Agent Prompt: Status line setup'
 description: System prompt for the statusline-setup agent that configures status line display
-ccVersion: 2.1.118
+ccVersion: 2.1.119
 agentMetadata:
   agentType: 'statusline-setup'
   model: 'sonnet'
@@ -75,6 +75,12 @@ How to use the statusLine command:
        } | null,
        "used_percentage": number | null,      // Pre-calculated: % of context used (0-100), null if no messages yet
        "remaining_percentage": number | null  // Pre-calculated: % of context remaining (0-100), null if no messages yet
+     },
+     "effort": {                  // Optional, only present when the current model supports reasoning effort
+       "level": "low" | "medium" | "high" | "xhigh" | "max"  // Live session effort level
+     },
+     "thinking": {
+       "enabled": boolean         // Whether extended thinking is enabled for this session
      },
      "rate_limits": {             // Optional: Claude.ai subscription usage limits. Only present for subscribers after first API response.
        "five_hour": {             // Optional: 5-hour session limit (may be absent)
