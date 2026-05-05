@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!important]
 > **NEW (January 23, 2026): We've added all of Claude Code's ~40 system reminders to this list&mdash;see [System Reminders](#system-reminders).**
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.128](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.128) (May 4th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 168 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.129](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.129) (May 5th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 169 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -95,7 +95,7 @@ Sub-agents and utilities.
 #### Utilities
 
 - [Agent Prompt: Auto mode rule reviewer](./system-prompts/agent-prompt-auto-mode-rule-reviewer.md) (**257** tks) - Reviews and critiques user-defined auto mode classifier rules for clarity, completeness, conflicts, and actionability.
-- [Agent Prompt: Background agent state classifier](./system-prompts/agent-prompt-background-agent-state-classifier.md) (**848** tks) - Classifies the tail of a background agent transcript as working, blocked, done, or failed and returns concise state JSON.
+- [Agent Prompt: Background agent state classifier](./system-prompts/agent-prompt-background-agent-state-classifier.md) (**4405** tks) - Classifies the tail of a background agent transcript as working, blocked, done, or failed and returns concise state JSON.
 - [Agent Prompt: Background job agent instructions](./system-prompts/agent-prompt-background-job-agent-instructions.md) (**427** tks) - Instructs the built-in background job agent to narrate progress, restate tool results, and emit explicit result, needs input, or failed status signals.
 - [Agent Prompt: Bash command description writer](./system-prompts/agent-prompt-bash-command-description-writer.md) (**207** tks) - Instructions for generating clear, concise command descriptions in active voice for bash commands.
 - [Agent Prompt: Bash command prefix detection](./system-prompts/agent-prompt-bash-command-prefix-detection.md) (**823** tks) - System prompt for detecting command prefixes and command injection.
@@ -119,7 +119,6 @@ Sub-agents and utilities.
 - [Agent Prompt: Security monitor for autonomous agent actions (second part)](./system-prompts/agent-prompt-security-monitor-for-autonomous-agent-actions-second-part.md) (**3679** tks) - Defines the environment context, block rules, and allow exceptions that govern which tool actions the agent may or may not perform.
 - [Agent Prompt: Session search](./system-prompts/agent-prompt-session-search.md) (**158** tks) - Subagent prompt for searching past Claude Code conversation sessions by scanning .jsonl transcript files and returning matching session IDs.
 - [Agent Prompt: Session title and branch generation](./system-prompts/agent-prompt-session-title-and-branch-generation.md) (**307** tks) - Agent for generating succinct session titles and git branch names.
-- [Agent Prompt: Verification specialist](./system-prompts/agent-prompt-verification-specialist.md) (**2885** tks) - System prompt for a verification subagent that adversarially tests implementations by running builds, test suites, linters, and adversarial probes, then issuing a PASS/FAIL/PARTIAL verdict.
 - [Agent Prompt: WebFetch summarizer](./system-prompts/agent-prompt-webfetch-summarizer.md) (**189** tks) - Prompt for agent that summarizes verbose output from WebFetch for the main model.
 - [Agent Prompt: Worker fork](./system-prompts/agent-prompt-worker-fork.md) (**258** tks) - System prompt for a forked worker sub-agent that executes a single directive from the parent agent and reports back concisely.
 
@@ -129,7 +128,6 @@ The content of various template files embedded in Claude Code.
 
 - [Data: Anthropic CLI](./system-prompts/data-anthropic-cli.md) (**2878** tks) - Reference documentation for the ant CLI covering installation, authentication, command structure, input and output shaping, managed agents workflows, and scripting patterns.
 - [Data: Assistant voice and values template](./system-prompts/data-assistant-voice-and-values-template.md) (**454** tks) - Template content for an assistant.md file describing Claude's voice, values, and communication style.
-- [Data: Background agent state classification examples](./system-prompts/data-background-agent-state-classification-examples.md) (**510** tks) - Example assistant-message tails and JSON outputs for classifying background agent state, tempo, needs, and result.
 - [Data: Claude API reference — C#](./system-prompts/data-claude-api-reference-c.md) (**4710** tks) - C# SDK reference including installation, client initialization, basic requests, streaming, and tool use.
 - [Data: Claude API reference — Go](./system-prompts/data-claude-api-reference-go.md) (**4521** tks) - Go SDK reference.
 - [Data: Claude API reference — Java](./system-prompts/data-claude-api-reference-java.md) (**4732** tks) - Java SDK reference including installation, client initialization, basic requests, streaming, and beta tool use.
@@ -175,6 +173,7 @@ Parts of the main system prompt.
 - [System Prompt: Agent thread notes](./system-prompts/system-prompt-agent-thread-notes.md) (**205** tks) - Behavioral guidelines for agent threads covering absolute paths, response formatting, emoji avoidance, and tool call punctuation.
 - [System Prompt: Auto mode](./system-prompts/system-prompt-auto-mode.md) (**255** tks) - Continuous task execution, akin to a background agent.
 - [System Prompt: Autonomous loop check](./system-prompts/system-prompt-autonomous-loop-check.md) (**1071** tks) - Defines behavior for autonomous timer-based invocations, guiding Claude to continue established work, maintain PRs, and handle repeated idle checks while the user is away.
+- [System Prompt: Autonomous loop persistence guidance (CLAUDE_CODE_LOOP_PERSISTENT)](./system-prompts/system-prompt-autonomous-loop-persistence-guidance-claude_code_loop_persistent.md) (**1173** tks) - Defines behavior for autonomous timer-based invocations, guiding Claude to persistently continue established work, maintain PRs, and broaden scope before stopping while the user is away.
 - [System Prompt: Avoiding Unnecessary Sleep Commands (part of PowerShell tool description)](./system-prompts/system-prompt-avoiding-unnecessary-sleep-commands-part-of-powershell-tool-description.md) (**175** tks) - Guidelines for avoiding unnecessary sleep commands in PowerShell scripts, including alternatives for waiting and notification.
 - [System Prompt: Background session instructions](./system-prompts/system-prompt-background-session-instructions.md) (**142** tks) - Instructions for background job sessions to use the job-specific temporary directory and follow the appropriate worktree isolation guidance.
 - [System Prompt: Censoring assistance with malicious activities](./system-prompts/system-prompt-censoring-assistance-with-malicious-activities.md) (**98** tks) - Guidelines for assisting with authorized security testing, defensive security, CTF challenges, and educational contexts while censoring requests for malicious activities.
