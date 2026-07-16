@@ -1,7 +1,7 @@
 <!--
 name: 'Data: Plan artifact HTML template'
 description: Standalone HTML template used for published plan artifacts, including layout, fill contract, and light/dark styling
-ccVersion: 2.1.208
+ccVersion: 2.1.212
 -->
 <!--
 name: plan
@@ -990,9 +990,10 @@ style: tokens come from @ant/cds's own vanilla export, embedded verbatim
     margin: 0;
   }
   pre code { background: none; padding: 0; font: inherit; }
-  /* Syntax-highlight theme for the hljs-* spans the build-time fill emits.
-     Colors are @ant/cds base-palette stops (600s light / 300s dark) — the
-     hue families CDS derives its role colors from. */
+  /* Syntax-highlight theme for the hljs-* spans the injected client-side
+     runtime (hljsHighlight.ts) emits. Colors are @ant/cds base-palette
+     stops (600s light / 300s dark) — the hue families CDS derives its role
+     colors from. */
   .hljs-comment, .hljs-quote, .hljs-meta { color: var(--hl-comment); font-style: italic; }
   .hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-type, .hljs-doctag { color: var(--hl-keyword); }
   .hljs-string, .hljs-regexp, .hljs-addition { color: var(--hl-string); }
