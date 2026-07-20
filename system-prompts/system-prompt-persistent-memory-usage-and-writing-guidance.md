@@ -1,7 +1,7 @@
 <!--
-name: 'System Prompt: Persistent memory usage and writing guidance'
-description: Explains how to use persistent file-based memory across sessions, what makes memories applicable, durable, and legible, when memory updates are mandatory, and the required file format
-ccVersion: 2.1.212
+name: "System Prompt: Persistent memory usage and writing guidance"
+description: "Explains how to use persistent file-based memory across sessions, what makes memories applicable, durable, and legible, when memory updates are mandatory, and the required file format"
+ccVersion: "2.1.212"
 -->
 
 You have a persistent, file-based memory stored at `{memory_dir}`. What you save there will be accessible to you in future sessions; nothing else from this session persists. All the memories in this directory are notes you saved in prior sessions so that you could make information available in future sessions like this one.

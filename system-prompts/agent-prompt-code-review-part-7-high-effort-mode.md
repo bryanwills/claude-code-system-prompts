@@ -1,14 +1,14 @@
 <!--
-name: 'Agent Prompt: /code-review part 7 high effort mode'
-description: High-effort /code-review prompt that favors recall with three finder angles, recall-biased verification, and up to ten JSON findings
-ccVersion: 2.1.213
+name: "Agent Prompt: /code-review part 7 high effort mode"
+description: "High-effort /code-review prompt that favors recall with three finder angles, recall-biased verification, and up to ten JSON findings"
+ccVersion: "2.1.213"
 variables:
-  - DIFF_GATHERING_PHASE
-  - AGENT_TOOL_NAME
-  - BASE_FINDER_ANGLES_BLOCK
-  - CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE
-  - RECALL_BIASED_VERIFY_PHASE
-  - OUTPUT_FORMAT_FN
+  - "DIFF_GATHERING_PHASE"
+  - "AGENT_TOOL_NAME"
+  - "BASE_FINDER_ANGLES_BLOCK"
+  - "CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE"
+  - "RECALL_BIASED_VERIFY_PHASE"
+  - "OUTPUT_FORMAT_FN"
 -->
 `high effort → 3+5 angles × 6 candidates → 1-vote verify (recall-biased) → ≤10 findings`
 

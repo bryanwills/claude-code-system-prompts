@@ -1,13 +1,13 @@
 <!--
-name: 'Tool Description: Workflow'
-description: Describes the Workflow tool for running deterministic multi-subagent orchestration scripts, including opt-in requirements, script metadata, agent hooks, concurrency, budgeting, quality patterns, and resume behavior
-ccVersion: 2.1.198
+name: "Tool Description: Workflow"
+description: "Describes the Workflow tool for running deterministic multi-subagent orchestration scripts, including opt-in requirements, script metadata, agent hooks, concurrency, budgeting, quality patterns, and resume behavior"
+ccVersion: "2.1.198"
 variables:
-  - WORKFLOW_TOOL_NAME
-  - WORKFLOW_SCRIPT_PATH_NOTE
-  - WORKFLOW_AGENT_ISOLATION_OPTION
-  - WORKFLOW_AGENT_ISOLATION_NOTE
-  - WORKFLOW_GROUP_PREFIX
+  - "WORKFLOW_TOOL_NAME"
+  - "WORKFLOW_SCRIPT_PATH_NOTE"
+  - "WORKFLOW_AGENT_ISOLATION_OPTION"
+  - "WORKFLOW_AGENT_ISOLATION_NOTE"
+  - "WORKFLOW_GROUP_PREFIX"
 -->
 Execute a workflow script that orchestrates multiple subagents deterministically. Workflows run in the background — this tool returns immediately with a task ID, and a <task-notification> arrives when the workflow completes. Use /workflows to watch live progress.
 

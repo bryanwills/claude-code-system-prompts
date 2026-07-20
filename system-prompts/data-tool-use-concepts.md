@@ -1,7 +1,7 @@
 <!--
-name: 'Data: Tool use concepts'
-description: Conceptual foundations of tool use with the Claude API including tool definitions, tool choice, and best practices
-ccVersion: 2.1.203
+name: "Data: Tool use concepts"
+description: "Conceptual foundations of tool use with the Claude API including tool definitions, tool choice, and best practices"
+ccVersion: "2.1.203"
 -->
 # Tool Use Concepts
 

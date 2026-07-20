@@ -1,16 +1,16 @@
 <!--
-name: 'Agent Prompt: /code-review part 3 extra-high and maximum effort modes'
-description: Extra-high and maximum-effort /code-review prompt that runs five finder angles, one-vote verification, a gap sweep, and capped JSON findings
-ccVersion: 2.1.213
+name: "Agent Prompt: /code-review part 3 extra-high and maximum effort modes"
+description: "Extra-high and maximum-effort /code-review prompt that runs five finder angles, one-vote verification, a gap sweep, and capped JSON findings"
+ccVersion: "2.1.213"
 variables:
-  - EFFORT_LEVEL
-  - DIFF_GATHERING_PHASE
-  - AGENT_TOOL_NAME
-  - EXTENDED_FINDER_ANGLES_BLOCK
-  - CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE
-  - THREE_STATE_VERIFY_PHASE
-  - GAP_SWEEP_PHASE
-  - OUTPUT_FORMAT_FN
+  - "EFFORT_LEVEL"
+  - "DIFF_GATHERING_PHASE"
+  - "AGENT_TOOL_NAME"
+  - "EXTENDED_FINDER_ANGLES_BLOCK"
+  - "CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE"
+  - "THREE_STATE_VERIFY_PHASE"
+  - "GAP_SWEEP_PHASE"
+  - "OUTPUT_FORMAT_FN"
 -->
 `${EFFORT_LEVEL} effort → 5+5 angles × 8 candidates → 1-vote verify → sweep → ≤15 findings`
 

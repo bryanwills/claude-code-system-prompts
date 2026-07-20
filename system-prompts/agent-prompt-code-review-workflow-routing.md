@@ -1,23 +1,23 @@
 <!--
-name: 'Agent Prompt: /code-review workflow routing'
-description: Routes eligible /code-review runs through the background code-review workflow and conditionally adds findings reporting, GitHub commenting, fix application, and artifact publishing
-ccVersion: 2.1.212
+name: "Agent Prompt: /code-review workflow routing"
+description: "Routes eligible /code-review runs through the background code-review workflow and conditionally adds findings reporting, GitHub commenting, fix application, and artifact publishing"
+ccVersion: "2.1.212"
 variables:
-  - CODE_REVIEW_ROUTING_NOTICE
-  - CODE_REVIEW_EFFORT_LEVEL
-  - WORKFLOW_TOOL_NAME
-  - JSON_STRINGIFY_FN
-  - CODE_REVIEW_WORKFLOW_NAME
-  - CODE_REVIEW_WORKFLOW_ARGS
-  - HAS_REPORT_FINDINGS_TOOL
-  - REPORT_FINDINGS_TOOL_NAME
-  - HAS_COMMENT_FLAG
-  - GITHUB_COMMENT_INSTRUCTIONS_BLOCK
-  - HAS_FIX_FLAG
-  - FIX_APPLICATION_INSTRUCTIONS_FN
-  - FINDINGS_REREPORT_INSTRUCTIONS_BLOCK
-  - ARTIFACT_PUBLISHING_INSTRUCTIONS_BLOCK
-  - EMPTY_STRING
+  - "CODE_REVIEW_ROUTING_NOTICE"
+  - "CODE_REVIEW_EFFORT_LEVEL"
+  - "WORKFLOW_TOOL_NAME"
+  - "JSON_STRINGIFY_FN"
+  - "CODE_REVIEW_WORKFLOW_NAME"
+  - "CODE_REVIEW_WORKFLOW_ARGS"
+  - "HAS_REPORT_FINDINGS_TOOL"
+  - "REPORT_FINDINGS_TOOL_NAME"
+  - "HAS_COMMENT_FLAG"
+  - "GITHUB_COMMENT_INSTRUCTIONS_BLOCK"
+  - "HAS_FIX_FLAG"
+  - "FIX_APPLICATION_INSTRUCTIONS_FN"
+  - "FINDINGS_REREPORT_INSTRUCTIONS_BLOCK"
+  - "ARTIFACT_PUBLISHING_INSTRUCTIONS_BLOCK"
+  - "EMPTY_STRING"
 -->
 ${CODE_REVIEW_ROUTING_NOTICE}Run the workflow-backed code review at ${CODE_REVIEW_EFFORT_LEVEL} effort instead of reviewing inline.
 

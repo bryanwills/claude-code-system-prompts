@@ -1,14 +1,14 @@
 <!--
-name: 'Agent Prompt: /code-review part 6 medium effort mode'
-description: Medium-effort /code-review prompt that favors precision with three finder angles, one-vote verification, and up to eight JSON findings
-ccVersion: 2.1.213
+name: "Agent Prompt: /code-review part 6 medium effort mode"
+description: "Medium-effort /code-review prompt that favors precision with three finder angles, one-vote verification, and up to eight JSON findings"
+ccVersion: "2.1.213"
 variables:
-  - DIFF_GATHERING_PHASE
-  - AGENT_TOOL_NAME
-  - BASE_FINDER_ANGLES_BLOCK
-  - CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE
-  - THREE_STATE_VERIFY_PHASE
-  - OUTPUT_FORMAT_FN
+  - "DIFF_GATHERING_PHASE"
+  - "AGENT_TOOL_NAME"
+  - "BASE_FINDER_ANGLES_BLOCK"
+  - "CLEANUP_AND_ALTITUDE_CANDIDATES_NOTE"
+  - "THREE_STATE_VERIFY_PHASE"
+  - "OUTPUT_FORMAT_FN"
 -->
 `medium effort → 3+5 angles × 6 candidates → 1-vote verify → ≤8 findings`
 

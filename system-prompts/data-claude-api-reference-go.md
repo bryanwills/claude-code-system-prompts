@@ -1,7 +1,7 @@
 <!--
-name: 'Data: Claude API reference — Go'
-description: Go SDK reference including installation, client initialization, model constants, basic requests, and thinking
-ccVersion: 2.1.182
+name: "Data: Claude API reference — Go"
+description: "Go SDK reference including installation, client initialization, model constants, basic requests, and thinking"
+ccVersion: "2.1.182"
 -->
 # Claude API — Go
 

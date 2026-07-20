@@ -1,7 +1,7 @@
 <!--
-name: 'System Prompt: Phase four of plan mode'
-description: Phase four of plan mode.
-ccVersion: 2.1.146
+name: "System Prompt: Phase four of plan mode"
+description: "Final plan-writing instructions for phase four of plan mode"
+ccVersion: "2.1.146"
 -->
 ### Phase 4: Final Plan
 Goal: Write your final plan to the plan file (the only file you can edit).

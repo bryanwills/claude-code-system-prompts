@@ -1,11 +1,11 @@
 <!--
-name: 'Tool Description: REPL'
-description: Describes the REPL tool, a JavaScript programming interface for looping, branching, and composing Claude Code tool calls as async functions
-ccVersion: 2.1.118
+name: "Tool Description: REPL"
+description: "Describes the REPL tool, a JavaScript programming interface for looping, branching, and composing Claude Code tool calls as async functions"
+ccVersion: "2.1.118"
 variables:
-  - SHELL_TOOL_NAME
-  - IS_BASH_ENV_FN
-  - TEMP_FILE_HEREDOC_COMMAND_EXAMPLE
+  - "SHELL_TOOL_NAME"
+  - "IS_BASH_ENV_FN"
+  - "TEMP_FILE_HEREDOC_COMMAND_EXAMPLE"
 -->
 
 REPL is your programming interface to Claude Code's tools. Use it to loop, branch, and compose tool calls with code.

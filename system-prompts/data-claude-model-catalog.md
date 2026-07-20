@@ -1,7 +1,7 @@
 <!--
-name: 'Data: Claude model catalog'
-description: Catalog of current and legacy Claude models with exact model IDs, aliases, context windows, and pricing
-ccVersion: 2.1.197
+name: "Data: Claude model catalog"
+description: "Catalog of current and legacy Claude models with exact model IDs, aliases, context windows, and pricing"
+ccVersion: "2.1.197"
 -->
 # Claude Model Catalog
 

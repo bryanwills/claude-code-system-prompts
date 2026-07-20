@@ -1,12 +1,12 @@
 <!--
-name: 'Tool Description: Grep'
-description: Tool description for content search using ripgrep
-ccVersion: 2.1.215
+name: "Tool Description: Grep"
+description: "Tool description for content search using ripgrep"
+ccVersion: "2.1.215"
 variables:
-  - GREP_TOOL_NAME
-  - BASH_TOOL_NAME
-  - SUBAGENT_STEERING_MODE_FN
-  - AGENT_TOOL_NAME
+  - "GREP_TOOL_NAME"
+  - "BASH_TOOL_NAME"
+  - "SUBAGENT_STEERING_MODE_FN"
+  - "AGENT_TOOL_NAME"
 -->
 A powerful search tool built on ripgrep
 

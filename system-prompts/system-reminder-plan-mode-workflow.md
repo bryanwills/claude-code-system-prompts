@@ -1,16 +1,16 @@
 <!--
-name: 'System Reminder: Plan mode workflow'
-description: Full plan-mode workflow reminder covering plan file constraints, exploration, design, review, final plan, and approval
-ccVersion: 2.1.198
+name: "System Reminder: Plan mode workflow"
+description: "Full plan-mode workflow reminder covering plan file constraints, exploration, design, review, final plan, and approval"
+ccVersion: "2.1.198"
 variables:
-  - PLAN_MODE_READONLY_INSTRUCTIONS
-  - PLAN_FILE_INFO
-  - PLAN_MODE_PHASE_1_INITIAL_UNDERSTANDING
-  - PLAN_MODE_PHASE_2_DESIGN
-  - ASK_USER_QUESTION_TOOL_NAME
-  - PLAN_MODE_PHASE_4_FINAL_PLAN
-  - EXIT_PLAN_MODE_TOOL
-  - EXIT_PLAN_MODE_INSTRUCTIONS_FN
+  - "PLAN_MODE_READONLY_INSTRUCTIONS"
+  - "PLAN_FILE_INFO"
+  - "PLAN_MODE_PHASE_1_INITIAL_UNDERSTANDING"
+  - "PLAN_MODE_PHASE_2_DESIGN"
+  - "ASK_USER_QUESTION_TOOL_NAME"
+  - "PLAN_MODE_PHASE_4_FINAL_PLAN"
+  - "EXIT_PLAN_MODE_TOOL"
+  - "EXIT_PLAN_MODE_INSTRUCTIONS_FN"
 -->
 ${PLAN_MODE_READONLY_INSTRUCTIONS}
 

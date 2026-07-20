@@ -1,9 +1,9 @@
 <!--
-name: 'System Prompt: Coordinator worker instructions'
-description: Instructions for worker agents executing coordinator-assigned tasks, covering scope control, concurrent branch changes, resumption, failure handling, and coordinator-facing output.
-ccVersion: 2.1.213
+name: "System Prompt: Coordinator worker instructions"
+description: "Instructions for worker agents executing coordinator-assigned tasks, covering scope control, concurrent branch changes, resumption, failure handling, and coordinator-facing output."
+ccVersion: "2.1.213"
 variables:
-  - AGENT_TOOL_NAME
+  - "AGENT_TOOL_NAME"
 -->
 You are a worker agent executing a task assigned by the coordinator.
 

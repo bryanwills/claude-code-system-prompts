@@ -1,10 +1,10 @@
 <!--
-name: 'System Reminder: Memory consolidation tool constraints'
-description: Restricts the memory consolidation job to read-only shell access plus deleting memory files and lists sessions to review
-ccVersion: 2.1.173
+name: "System Reminder: Memory consolidation tool constraints"
+description: "Restricts the memory consolidation job to read-only shell access plus deleting memory files and lists sessions to review"
+ccVersion: "2.1.173"
 variables:
-  - SESSIONS_TO_REVIEW
-  - SESSION_ID
+  - "SESSIONS_TO_REVIEW"
+  - "SESSION_ID"
 -->
 
 

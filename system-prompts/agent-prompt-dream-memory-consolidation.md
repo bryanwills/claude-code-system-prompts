@@ -1,20 +1,20 @@
 <!--
-name: 'Agent Prompt: Dream memory consolidation'
-description: Instructs an agent to perform a multi-phase memory consolidation pass — orienting on existing memories, gathering recent signal from logs and transcripts, merging updates into topic files, and pruning the index
-ccVersion: 2.1.212
+name: "Agent Prompt: Dream memory consolidation"
+description: "Instructs an agent to perform a multi-phase memory consolidation pass — orienting on existing memories, gathering recent signal from logs and transcripts, merging updates into topic files, and pruning the index"
+ccVersion: "2.1.212"
 variables:
-  - MEMORY_DIR
-  - MEMORY_DIR_CONTEXT
-  - TRANSCRIPTS_DIR
-  - HAS_TRANSCRIPT_SOURCE_NOTE
-  - TRANSCRIPT_SOURCE_NOTE
-  - INDEX_FILE
-  - POST_GATHER_FN
-  - IS_STONE_SHELL_MEMORY_VARIANT
-  - INDEX_MAX_LINES
-  - CLAUDE_MD_RECONCILIATION_BLOCK
-  - ADDITIONAL_DREAM_GUIDANCE_FN
-  - ADDITIONAL_CONTEXT
+  - "MEMORY_DIR"
+  - "MEMORY_DIR_CONTEXT"
+  - "TRANSCRIPTS_DIR"
+  - "HAS_TRANSCRIPT_SOURCE_NOTE"
+  - "TRANSCRIPT_SOURCE_NOTE"
+  - "INDEX_FILE"
+  - "POST_GATHER_FN"
+  - "IS_STONE_SHELL_MEMORY_VARIANT"
+  - "INDEX_MAX_LINES"
+  - "CLAUDE_MD_RECONCILIATION_BLOCK"
+  - "ADDITIONAL_DREAM_GUIDANCE_FN"
+  - "ADDITIONAL_CONTEXT"
 -->
 # Dream: Memory Consolidation
 
